@@ -1,0 +1,12 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+header{
+    position: absolute;
+    width: 1444px;
+    height: 150px;
+    left: 0px;
+    top: -7px;
+}
