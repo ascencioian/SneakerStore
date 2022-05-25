@@ -20,27 +20,35 @@
     <!-- header -->
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-black d-flex">
+            <div class="d-md-none">
+                <a href="/html/index.html" class="thumbnail navbar-brand logo ">
+                    <img
+                    src=
+                    "/img/svg/hamburger.svg"
+                    style="height: 60px; width: 60px"
+                    />
+                </a>
+            </div>
             
-            
-               <div>
-                    <a href="#" class="thumbnail navbar-brand logo">
-                        <img
-                        src=
-                        "/img/svg/noun-sneaker-2278555.svg"
-                        style="height: 60px; width: 60px"
-                        />
-                    </a>
-                </div>
+            <div class="d-sm-none  d-md-block d-none d-md-block">
+                <a href="#" class="thumbnail navbar-brand logo">
+                    <img
+                    src=
+                    "/img/svg/noun-sneaker-2278555.svg"
+                    style="height: 60px; width: 60px"
+                    />
+                </a>
+            </div>
             
             <div class="container justify-content-center position-absolute">
                 
                 
               
-                <h1>Sneakers & Shoes</h1>
+                <h1 class="mt">Sneakers & Shoes</h1>
 
             </div>
             
-            <div>
+            <div class = "d-sm-none  d-md-block d-none d-md-block">
                 <a href="#" class="thumbnail navbar-brand logo">
                     <img
                     src=
@@ -91,16 +99,17 @@
     <!-- showcase -->
     <section class = "text-center">
         <div class="container" >
-            <div class="d-sm-flex align-items-center promoBackground"> 
+            <div class="d-sm-flex align-items-center"> 
                 <div class="">
-                    <img class="img-fluid w-50 d-none" src="/img/png/homePageSneakerMobile.png" alt="Promo of product X">
+                   
+                    <img class="img-fluid d-block d-sm-block d-md-none mx-auto" src="/img/svg/homePageSneakerMobile.svg" alt="Promo of product X">
                     <h1 class="my-4">
                         Introducing product X.
-                        Our lightest shoe, ever.
+                        Our lightest shoe, ever. 
                     </h1>
                     <button class="btn btn-dark btn-lg">Shop Now</button>
                 </div>
-                <img class="img-fluid w-50 d-none d-sm-block" src="/img/png/homePageSneakerDesktop.png" alt="Promo of product X">
+                <img class="img-fluid w-50 d-none d-md-block" src="/img/png/homePageSneakerDesktop.png" alt="Promo of product X">
             </div>
         </div>
     </section>
