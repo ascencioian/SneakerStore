@@ -3,6 +3,25 @@ body {
     font-weight: 700;
 }
 
+/* colorpallete */
+.first-color { 
+	background: #f7f7f7; 
+}
+
+/* actoin */
+.second-color { 
+	background: #3b0944; 
+}
+
+.third-color { 
+	background: #5f1854; 
+}
+
+//accent
+.fourth-color { 
+	background: #1abb9c; 
+}
+
 header{
     position: absolute;
     width: 1444px;
@@ -10,4 +29,6 @@ header{
     left: 0px;
     top: -7px;
 }
+
+
 
