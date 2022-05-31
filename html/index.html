@@ -157,7 +157,7 @@
                     <h2 class = "my-4  display-3">
                         S*N*S
                     </h2>
-                    <button class="btn btn btn-outline-dark btn-lg">Register</button>
+                    <button class="btn btn btn-outline-dark btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Register</button>
                     <h2 class = "my-4 display-3">
                         S*N*S
                     </h2>
@@ -173,6 +173,49 @@
             <p>©2022 Sneakers & Shoes inc. All Rights Reserved</p>
         </div>
     </footer>
+
+    <!-- enroll modal -->
+    <div class="modal fade" id="enroll" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            
+            <div class="modal-body">
+                <p class="lead">Fill out this form & Never miss a drop. Ever.</p>
+                <form>
+                    <div class="mb-3">
+                      <label for="first-name" class="col-form-label">
+                        First Name:
+                      </label>
+                      <input type="text" class="form-control" id="first-name" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="last-name" class="col-form-label">Last Name:</label>
+                      <input type="text" class="form-control" id="last-name" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="col-form-label">Email:</label>
+                      <input type="email" class="form-control" id="email" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="col-form-label">Password:</label>
+                      <input type="text" class="form-control" id="password" />
+                    </div>
+                  </form>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-dark">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- scripts -->
     <script src="/js/main.js"></script>
