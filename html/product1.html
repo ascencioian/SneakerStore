@@ -102,18 +102,38 @@
                     <h2 class="my-4">
                         Product X
                     </h2>
+
                     <div class="dropdown my-4 d-block ">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Dropdown button
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select Size
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">5</a>
+                            <a class="dropdown-item" href="#">5.5</a>
+                          <a class="dropdown-item" href="#">6</a>
+                          <a class="dropdown-item" href="#">6.5</a>
+                          <a class="dropdown-item" href="#">7</a>
+                          <a class="dropdown-item" href="#">7.5</a>
+                          <a class="dropdown-item" href="#">8</a>
+                          <a class="dropdown-item" href="#">8.5</a>
+                          <a class="dropdown-item" href="#">9</a>
+                          <a class="dropdown-item" href="#">9.5</a>
+                          <a class="dropdown-item" href="#">10</a>
+                          <a class="dropdown-item" href="#">10.5</a>
+                          <a class="dropdown-item" href="#">11</a>
+                          <a class="dropdown-item" href="#">11.5</a>
+                          <a class="dropdown-item" href="#">12</a>
+                        </ul>
+
                     </div>
                    
                     <button class="btn btn-dark btn-lg">Add To Cart</button>
+
+                    <div class="dropdown my-4 d-block " >
+
+                        <button class="btn btn-secondary btn-md" data-bs-toggle="modal" data-bs-target="#sizing">sizing</button>
+                    </div>
                     
                 </div>
                 <img class="img-fluid w-50 d-none d-sm-block" src="/img/svg/products/sneakerForSale3.svg" alt="Promo of product X">
@@ -192,6 +212,130 @@
               <p>©2022 Sneakers & Shoes inc. All Rights Reserved</p>
           </div>
       </footer>
+
+      <!-- Modal -->
+<div class="modal fade" id="sizing" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Sizing Options</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+            <table class="table table-striped">
+                <thead >
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">US</th>
+                    <th scope="col">UK</th>
+                    <th scope="col">EU</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>5</td>
+                        <td>4.5</td>
+                        <td>38</td>
+                      </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>5.5</td>
+                        <td>5</td>
+                        <td>38.5</td>
+                      </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>6</td>
+                        <td>5.5</td>
+                        <td>39</td>
+                      </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>6.5</td>
+                        <td>6</td>
+                        <td>39.5</td>
+                      </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>7</td>
+                    <td>6.5</td>
+                    <td>40</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>7.5</td>
+                    <td>7</td>
+                    <td>40.5</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>8</td>
+                    <td>7.5</td>
+                    <td>41</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>8.5</td>
+                    <td>8</td>
+                    <td>41.5</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>9</td>
+                    <td>8.5</td>
+                    <td>42</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>9.5</td>
+                    <td>9</td>
+                    <td>42.5</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">11</th>
+                    <td>10</td>
+                    <td>9.5</td>
+                    <td>43</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">12</th>
+                    <td>10.5</td>
+                    <td>10</td>
+                    <td>43.5</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">13</th>
+                    <td>11</td>
+                    <td>10.5</td>
+                    <td>44</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">14</th>
+                    <td>11.5</td>
+                    <td>11</td>
+                    <td>44.5</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">15</th>
+                    <td>12</td>
+                    <td>11.5</td>
+                    <td>45</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
 
 
     <script src="/js/product.js"></script>
