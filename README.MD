@@ -1,4 +1,4 @@
-# My Awesome Project
+# Sneakers & Shoes Wireframe
 This is a wireframe project for a sneaker store. The concept for the website is based off StockX, a popular shoe website.
 
 **Link to project:**
@@ -12,12 +12,12 @@ This is a wireframe project for a sneaker store. The concept for the website is 
 
 ## Optimizations
 
--use of svg images
+use of svg images
 
 ## Lessons Learned:
 
--HTML for content
--CSS for styling
--javascript for form validation
+HTML for content
+CSS for styling
+javascript for form validation
 
 ## Examples:
