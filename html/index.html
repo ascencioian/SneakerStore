@@ -8,9 +8,11 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- font -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    
     <!-- external css -->
     <link rel="stylesheet" href="/css/index.css">
   </head>
@@ -107,7 +109,7 @@
                         Introducing product X.
                         Our lightest shoe, ever. 
                     </h1>
-                    <a href="/html/product1.html"> <button class="btn btn-dark btn-lg">Shop Now</button></a>
+                    <a href="/html/product1.html"> <button class="btn btn-outline-danger btn-lg">Shop Now</button></a>
                 </div>
                 <img class="img-fluid w-50 d-none d-md-block" src="/img/png/homePageSneakerDesktop.png" alt="Promo of product X">
             </div>
@@ -117,7 +119,7 @@
     <!-- product -->
     <section class="p-5 text-center">
         <div class="container bg-light">
-            <h3 class="my-4 pt-4">New Releases</h3>
+            <h3 class="my-4 pt-4 " id="newReleasesHeader">New Releases</h3>
             
             <div class="row">
                 <div class="col-md ">
@@ -159,7 +161,7 @@
                     <h2 class = "my-4  display-3">
                         S*N*S
                     </h2>
-                    <button class="btn btn btn-outline-dark btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Register</button>
+                    <button class="btn btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Register</button>
                     <h2 class = "my-4 display-3">
                         S*N*S
                     </h2>
@@ -189,25 +191,46 @@
             
             <div class="modal-body">
                 <p class="lead">Never miss a drop. Ever.</p>
-                <form>
+
+                <form class="form" id="form">
+
                     <div class="mb-3">
                       <label for="first-name" class="col-form-label">
                         First Name:
                       </label>
-                      <input type="text" class="form-control" id="first-name" />
+                      <input type="text" class="form-control formControlSuccess" id="firstName" />
+                      <img src="/img/svg/check-circle.svg" alt="check-circle" class="formIcon check">
+                      <img src="/img/svg/exclamation-circle.svg" alt="check-circle" class="formIcon exclamation">
+            <small class="formErrorMessage">Error message</small>
                     </div>
                     <div class="mb-3">
                       <label for="last-name" class="col-form-label">Last Name:</label>
-                      <input type="text" class="form-control" id="last-name" />
+                      <input type="text" class="form-control formControlError" id="lastName" />
+                      <img src="/img/svg/check-circle.svg" alt="check-circle" class="formIcon">
+                      <img src="/img/svg/exclamation-circle.svg" alt="check-circle" class="formIcon">
+            <small class="formErrorMessage">Error message</small>
                     </div>
                     <div class="mb-3">
                       <label for="email" class="col-form-label">Email:</label>
                       <input type="email" class="form-control" id="email" />
+                      <img src="/img/svg/check-circle.svg" alt="check-circle" class="formIcon">
+                      <img src="/img/svg/exclamation-circle.svg" alt="check-circle" class="formIcon">
+            <small class="formErrorMessage">Error message</small>
                     </div>
                     <div class="mb-3">
                       <label for="password" class="col-form-label">Password:</label>
-                      <input type="text" class="form-control" id="password" />
+                      <input type="password" class="form-control" id="password" />
+                      <img src="/img/svg/check-circle.svg" alt="check-circle" class="formIcon">
+                      <img src="/img/svg/exclamation-circle.svg" alt="check-circle" class="formIcon">
+            <small class="formErrorMessage">Error message</small>
                     </div>
+                    <div class="mb-3">
+                        <label for="password" class="col-form-label">Confirm Password:</label>
+                        <input type="password" class="form-control" id="passwordCheck" />
+                        <img src="/img/svg/check-circle.svg" alt="check-circle" class="formIcon">
+                      <img src="/img/svg/exclamation-circle.svg" alt="check-circle" class="formIcon">
+            <small class="formErrorMessage">Error message</small>
+                      </div>
                   </form>
             </div>
 
@@ -222,7 +245,7 @@
       </div>
 
     <!-- scripts -->
-    <script src="/js/main.js"></script>
+    <script src="/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
